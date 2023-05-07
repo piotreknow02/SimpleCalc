@@ -3,17 +3,23 @@ import gi
 gi.require_version('Gtk', '4.0')
 from gi.repository import Gtk
 
+btn_padding = 3
+
 class Calculator(Gtk.Window):
     def __init__(self, app):
         super().__init__(application=app, title="SimpleCalc")
-        # self.set_border_width(10)
 
         # Create the grid
         grid = Gtk.Grid()
+        grid.set_hexpand(True)
+        grid.set_vexpand(True)
+        grid.set_column_spacing(btn_padding)
+        grid.set_row_spacing(btn_padding)
         self.set_child(grid)
 
         # Create the entry field
         self.entry = Gtk.Entry()
+        self.entry.set_hexpand(True)
         grid.attach(self.entry, 0, 0, 4, 1)
 
         # Create buttons
