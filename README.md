@@ -8,7 +8,7 @@ Simple minimalistic calculator app made in GTK with python
 
 ## Setup
 
-First read [how to set up gtk4 for your operating system](https://www.gtk.org/docs/installations/)
+First read [how to set up PyGObject with gtk4 for your operating system](https://pygobject.readthedocs.io/en/latest/getting_started.html)
 
 #### Using pipenv
 
